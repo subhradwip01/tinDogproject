@@ -12,6 +12,6 @@ app.get("/", (req, res) => {
 
 
 // Starting Server;
-app.listen(3000, function () {
+app.listen(process.env.PORT||3000, function () {
   console.log("Server Started at 3000");
 });
